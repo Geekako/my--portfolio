@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Wawati SC", "Hannotate SC", sans-serif; /* "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ"*/
+  background-color: #e6e6e6;
+}
+/*--------header---------*/
+header {
+  padding: 15px 4% 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.headerName {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+}
+.headerName::first-letter {
+  font-size: 1.5em;
+  color: #88b4fa;
+}
+a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+nav {
+  margin: 0 0 0 auto;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex; /*flex(縦並び) inline-flex(横並び)*/
+  justify-content: flex-end; /*右よせ　justify-contentは左右方向・align-itemsは上下方向*/
+}
+li {
+  margin: 0 15px 0 15px;
+  font-size: 30px;
+}
+/*--------home---------*/
+.my-img {
+  margin: 100px 100px 50px 100px;
+}
+.name {
+  position: absolute;
+  right: 70px;
+  top: 200px;
+  font-size: 4vw; /*vwにすると viewport width　ビューポート＝画像に対する割合*/
+  width: 30%;
+  color: rgb(37, 37, 37);
+  border-bottom: 2px solid rgb(37, 37, 37);
+}
+.my-photo1 {
+  width: 80%;
+  height: auto; /*縦横の比率をかえない*/
+  display: block;
+  margin: auto;
+}
+.aboutme-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.aboutme-title {
+  margin: 0 0 20px 0;
+  font-size: 50px;
+  border-bottom: 0.1rem solid #333; /*border-bottom:style size color;*/
+}
+.aboutme_details {
+  display: flex; /*flex(縦並び)*/
+  flex-wrap: wrap; /*flex-wrap(フレックスアイテムの繰り返し)*/
+  justify-content: space-between; /*justify-content(位置)space-between(余白をもって等間隔に配置*/
+}
+.aboutme_details > div {
+  width: 50%; /*合わせて100％することで等分できる　二等分＝50％　三等分＝calc(100% / 3)*/
+}
+.aboutme_q-and-a {
+  width: 45px;
+  margin-top: 5px;
+}
+.aboutme_question {
+  border-bottom: 0.1rem solid #333;
+  font-size: 45px;
+  margin-bottom: 2px;
+  width: 90%; /*繋がっていた線が離れた*/
+}
+.aboutme_answer {
+  font-size: 40px;
+  color: #333;
+  transition: all 1.3s;
+  transition: color 1.3;
+  width: 90%;
+  margin: 25px 25px 25px 50px;
+}
+.aboutme_answer:hover {
+  transform: scale(1.2, 1.2);
+  color: #88b4fa;
+}
+/*--------gallery---------*/
+.gallery-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.gallery_title {
+  margin: 0 70px 20px 70px;
+  font-size: 50px;
+  border-bottom: 0.1rem solid #333;
+}
+.sliderphoto {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  display: block;
+  margin: auto;
+}
+.button {
+  display: block;
+  margin: auto;
+  border: solid 1px black;
+}
+.button:hover {
+  margin: auto;
+  color: #000;
+  background: rgb(182, 181, 181);
+  border-bottom: 2px solid rgb(37, 37, 37);
+}
+/*--------footer---------*/
+footer {
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+  background-color: #fff;
+}
+.lastName {
+  text-align: center;
+  margin-top: 40px;
+  color: rgb(72, 69, 69);
+  font-size: 25px;
+}
+li {
+  list-style: none;
+}
+.sns {
+  position: relative;
+  padding-top: 45px;
+  text-align: center;
+}
+.insta {
+  position: absolute;
+  margin-left: 0.5%;
+  bottom: 7%;
+  font-size: 2vw;
+  color: rgb(72, 69, 69);
+}
+.insta-logo {
+  width: 2%;
+  height: auto;
+  margin-left: -10%;
+}

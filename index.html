@@ -9,6 +9,80 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <script src="main.js"></script>
+    <header>
+        <h1 class="headerName">
+          <a href="URL">AKO's NOTES</a>
+        </h1>
+        <nav class="ps-nuv">
+          <ul>
+            <li id="home"><!--<a href="#home" >-->Home</a></li>
+            <li id="about"><!--<a href="#about">-->About</a></li>
+            <li id="gallery"><!--<a href="#gallery">-->Gallery</a></li>
+          </ul>
+        </nav.>
+    </header>
+    <!--home-->
+    <div class="my-img" id="home-page"><!--ここにid=homeでもスクロールされる-->
+      <h1 class="name">城あこ<br/><span class="english-name">Ako Tachi</span>
+      </h1>
+      <img src="images/my-img1.jpg" class="my-photo1">
+    </div>
+    <!--about-->
+    <div class="aboutme-container" id="about-page"><!--ここにid=aboutでもスクロールされる-->
+      <h1 class="aboutme-title">About me</h1>
+      <!--Aboutmeの詳細-->
+      <div class="aboutme_details">
+      <div class="aboutme_q-and-a">
+        <p class="aboutme_question">Name</p>
+        <p class="aboutme_answer">城あこ</p>
+      </div>
+      <div class="aboutme_q-and-a">
+        <p class="aboutme_question">Age</p>
+        <p class="aboutme_answer">19</p>
+      </div>
+      <div class="aboutme_q-and-a">
+        <p class="aboutme_question">Born in</p>
+        <p class="aboutme_answer">愛知
+        </p>
+      </div>
+      <div class="aboutme_q-and-a">
+        <p class="aboutme_question">University</p>
+        <p class="aboutme_answer">立命館大学</p>
+      </div>
+      <div class="aboutme_q-and-a">
+        <p class="aboutme_question">Faculty</p>
+        <p class="aboutme_answer">経済学部</p>
+      </div>
+      <div class="aboutme_q-and-a">
+        <p class="aboutme_question">Grade</p>
+        <p class="aboutme_answer">2年</p>
+      </div>
+      <div class="aboutme_q-and-a">
+        <p class="aboutme_question">my pet</p>
+        <p class="aboutme_answer">dog </p>
+      </div>
+      <div class="aboutme_q-and-a">
+        <p class="aboutme_question">Hobby</p>
+        <p class="aboutme_answer">友達と旅行</p>
+      </div>
+      </div>
+    </div>
+    <!--galally-->
+    <div class="gallrery_container" id="gallery-page"><!--ここにid=galleryでもスクロールされる-->
+      <h1 class="gallery_title">Gallery of mydog</h1>
+      <img src="images/my-dog2.jpg" id="slideshow" class="sliderphoto"><br>
+      <input type="button" value="開始・停止" id="startstopbtn" class="button">
+    </div>
+    
+<footer>
+  <div class="sns">
+    <li>
+      <img src="images/instalogo.png" class="insta-logo">
+      <a href="" class="insta">Instagram</a>
+    </li>
+  </div>
+  <p class="lastName">- AKO TACHI -</p>
+</footer>
+<script src="main.js"></script>
   </body>
 </html>
